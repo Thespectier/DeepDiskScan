@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1083</width>
+    <height>552</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>1091</width>
+      <height>491</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>2</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout"/>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1083</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuoptions">
+    <property name="title">
+     <string>选项</string>
+    </property>
+    <widget class="QMenu" name="menuDirTree_Operations">
+     <property name="title">
+      <string>DirTree_Operations</string>
+     </property>
+     <addaction name="generate_DirTree"/>
+     <addaction name="clear_DirTree"/>
+     <addaction name="separator"/>
+    </widget>
+    <widget class="QMenu" name="menuDirTree_Information">
+     <property name="title">
+      <string>DirTree_Information</string>
+     </property>
+     <addaction name="get_FileInfo_2"/>
+     <addaction name="check_InfoChange"/>
+     <addaction name="get_SpecInfo"/>
+    </widget>
+    <widget class="QMenu" name="menusimulate_Operations">
+     <property name="title">
+      <string>simulate_Operations</string>
+     </property>
+     <addaction name="sim_FileOper"/>
+     <addaction name="sim_DirOper"/>
+    </widget>
+    <addaction name="scan_directory"/>
+    <addaction name="get_SQLfiles"/>
+    <addaction name="menuDirTree_Operations"/>
+    <addaction name="menuDirTree_Information"/>
+    <addaction name="menusimulate_Operations"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="use_document"/>
+   </widget>
+   <addaction name="menuoptions"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="scan_directory">
+   <property name="text">
+    <string>scan_directory</string>
+   </property>
+  </action>
+  <action name="get_SQLfiles">
+   <property name="text">
+    <string>get_SQLfiles</string>
+   </property>
+  </action>
+  <action name="generate_DirTree">
+   <property name="text">
+    <string>generate_DirTree</string>
+   </property>
+  </action>
+  <action name="clear_DirTree">
+   <property name="text">
+    <string>clear_DirTree</string>
+   </property>
+  </action>
+  <action name="get_FileInfo_2">
+   <property name="text">
+    <string>get_FileInfo</string>
+   </property>
+  </action>
+  <action name="check_InfoChange">
+   <property name="text">
+    <string>check_InfoChange</string>
+   </property>
+  </action>
+  <action name="sim_FileOper">
+   <property name="text">
+    <string>sim_FileOper</string>
+   </property>
+  </action>
+  <action name="sim_DirOper">
+   <property name="text">
+    <string>sim_DirOper</string>
+   </property>
+  </action>
+  <action name="get_SpecInfo">
+   <property name="text">
+    <string>get_SpecInfo</string>
+   </property>
+  </action>
+  <action name="use_document">
+   <property name="text">
+    <string>use_documentation</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
